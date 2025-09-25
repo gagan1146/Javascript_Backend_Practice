@@ -1,0 +1,40 @@
+body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        #card {
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        #avatar {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+
+        #name {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        #profile-button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #profile-button:hover {
+            background: #0056b3;
+        }
