@@ -9,7 +9,7 @@ dotenv.config();
 const app = express();
 connectDB();
 
-app.use(bodyParser.json());
+app.use(express.json());
 app.use(cors());
 // app.use(express.json());
 // app.use(express.urlencoded({ extended: true }));
