@@ -1,5 +1,6 @@
 import userModel from './../models/user.model.js';
 import jwt from 'jsonwebtoken';
+import bcrypt from 'bcryptjs';
 export const signup = async (req, res) => {
     try{
         const { name, email, password } = req.body;
@@ -14,9 +15,9 @@ export const signup = async (req, res) => {
         .json({
             message: 'User registered successfully',
             user: {
-                id: UserModel._id,
-                name: UserModel.name,
-                email: UserModel.email
+                id: newUser._id,
+                name: newUser.name,
+                email: newUser.email
             }
         })
     }
